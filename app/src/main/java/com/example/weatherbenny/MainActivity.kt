@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
      */
 
         start_button.setOnClickListener {
-            startActivity(Intent(this, HomeActivity::class.java))
-            finish()
+            val intent = Intent (this,HomeActivity::class.java)
+            startActivity(intent)
         }
 
         exit_button.setOnClickListener{
